@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
         timerTextView.setText(getString(R.string._30s));
         pointsTextView.setText(getString(R.string._0_0));
         resultTextView.setText(getString(R.string.answering));
-        playAgainButton.setVisibility(View.VISIBLE);
+        playAgainButton.setVisibility(View.INVISIBLE);
 
         generateQuestion();
 
