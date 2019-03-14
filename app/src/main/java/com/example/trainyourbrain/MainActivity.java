@@ -39,6 +39,10 @@ public class MainActivity extends AppCompatActivity {
         pointsTextView.setText(getString(R.string._0_0));
         resultTextView.setText(getString(R.string.answering));
         playAgainButton.setVisibility(View.INVISIBLE);
+        button3.setEnabled(true);
+        button4.setEnabled(true);
+        button5.setEnabled(true);
+        button6.setEnabled(true);
 
         generateQuestion();
 
@@ -54,6 +58,10 @@ public class MainActivity extends AppCompatActivity {
                 playAgainButton.setVisibility(View.VISIBLE);
                 timerTextView.setText(getString(R.string.sec_finish));
                 resultTextView.setText(getString(R.string.your_score, score));
+                button3.setEnabled(false);
+                button4.setEnabled(false);
+                button5.setEnabled(false);
+                button6.setEnabled(false);
             }
         }.start();
 
